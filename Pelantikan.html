@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Kegiatan - Pelantikan OSIM 2025/2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="Logo OSIM.png" class="w-12 h-12 rounded-full flex items-center justify-center">
+                </img>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">OSIM</h1>
+                        <p class="text-sm text-gray-600">MTsN 1 Makassar</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="#beranda" class="flex items-center space-x-1 text-gray-700 hover:text-emerald-600 transition-colors duration-200 font-medium">
+                        <i data-lucide="home" class="w-4 h-4"></i>
+                        <span>Beranda</span>
+                    </a>
+                    <a href="#tentang" class="flex items-center space-x-1 text-gray-700 hover:text-emerald-600 transition-colors duration-200 font-medium">
+                        <i data-lucide="info" class="w-4 h-4"></i>
+                        <span>Tentang</span>
+                    </a>
+                    <a href="#program" class="flex items-center space-x-1 text-gray-700 hover:text-emerald-600 transition-colors duration-200 font-medium">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        <span>Program Kerja</span>
+                    </a>
+                    <a href="#anggota" class="flex items-center space-x-1 text-gray-700 hover:text-emerald-600 transition-colors duration-200 font-medium">
+                        <i data-lucide="users" class="w-4 h-4"></i>
+                        <span>Anggota</span>
+                    </a>
+                    <a href="#berita" class="flex items-center space-x-1 text-gray-700 hover:text-emerald-600 transition-colors duration-200 font-medium">
+                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                        <span>Berita</span>
+                    </a>
+                    <a href="#galeri" class="flex items-center space-x-1 text-gray-700 hover:text-emerald-600 transition-colors duration-200 font-medium">
+                        <i data-lucide="camera" class="w-4 h-4"></i>
+                        <span>Galeri</span>
+                    </a>
+                    <a href="#kontak" class="flex items-center space-x-1 text-gray-700 hover:text-emerald-600 transition-colors duration-200 font-medium">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        <span>Kontak</span>
+                    </a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu lg:hidden pb-4">
+                <nav class="flex flex-col space-y-2">
+                    <a href="#beranda" class="flex items-center space-x-2 py-2 px-3 text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-all duration-200">
+                        <i data-lucide="home" class="w-4 h-4"></i>
+                        <span>Beranda</span>
+                    </a>
+                    <a href="#tentang" class="flex items-center space-x-2 py-2 px-3 text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-all duration-200">
+                        <i data-lucide="info" class="w-4 h-4"></i>
+                        <span>Tentang</span>
+                    </a>
+                    <a href="#program" class="flex items-center space-x-2 py-2 px-3 text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-all duration-200">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        <span>Program Kerja</span>
+                    </a>
+                    <a href="#anggota" class="flex items-center space-x-2 py-2 px-3 text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-all duration-200">
+                        <i data-lucide="users" class="w-4 h-4"></i>
+                        <span>Anggota</span>
+                    </a>
+                    <a href="#berita" class="flex items-center space-x-2 py-2 px-3 text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-all duration-200">
+                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                        <span>Berita</span>
+                    </a>
+                    <a href="#galeri" class="flex items-center space-x-2 py-2 px-3 text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-all duration-200">
+                        <i data-lucide="camera" class="w-4 h-4"></i>
+                        <span>Galeri</span>
+                    </a>
+                    <a href="#kontak" class="flex items-center space-x-2 py-2 px-3 text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-all duration-200">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        <span>Kontak</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-emerald-50 to-teal-50 py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">Pelantikan Pengurus OSIM 2025/2026</h1>
+      <p class="text-lg text-gray-600 flex items-center justify-center">
+        <i data-lucide="calendar" class="w-5 h-5 mr-2 text-emerald-600"></i>
+        15 Januari 2025 | Lapangan MTsN 1 Makassar
+      </p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <main class="max-w-4xl mx-auto px-4 py-12 space-y-8">
+    <div class="prose max-w-none">
+      <p>
+        Pelantikan pengurus OSIM periode 2025/2026 dilaksanakan dengan khidmat di Lapangan MTsN 1 Makassar.
+        Acara ini dihadiri oleh Kepala Madrasah, para guru, serta seluruh siswa. 
+      </p>
+      <p>
+        Rangkaian acara dimulai dengan pembacaan ayat suci Al-Qur’an, dilanjutkan dengan sambutan
+        dari Kepala Madrasah dan penyerahan simbolis bendera OSIM kepada Ketua OSIM terpilih.
+      </p>
+      <p>
+        Momentum ini menjadi tonggak awal bagi pengurus baru untuk melanjutkan estafet kepemimpinan,
+        mengembangkan program-program inovatif, dan memperkuat karakter Islami di lingkungan madrasah.
+      </p>
+    </div>
+
+    <!-- Foto Kegiatan -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-lg shadow overflow-hidden">
+        <img src="https://via.placeholder.com/600x400" alt="Foto Pelantikan 1" class="w-full h-60 object-cover">
+        <div class="p-4 text-gray-700 text-sm">Pengucapan Ikrar Pengurus Baru</div>
+      </div>
+      <div class="bg-white rounded-lg shadow overflow-hidden">
+        <img src="https://via.placeholder.com/600x400" alt="Foto Pelantikan 2" class="w-full h-60 object-cover">
+        <div class="p-4 text-gray-700 text-sm">Serah Terima Bendera OSIM</div>
+      </div>
+    </div>
+
+    <!-- Quotes -->
+    <blockquote class="border-l-4 border-emerald-600 pl-4 italic text-gray-700">
+      "Kami siap mengabdi dan berkontribusi untuk OSIM yang lebih baik, berprestasi, dan berkarakter Islami."
+      <br><span class="text-emerald-600 font-medium">— Ketua OSIM 2025/2026</span>
+    </blockquote>
+  </main>
+
+<!-- Footer -->
+
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">OSIM</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">OSIM</h3>
+                            <p class="text-sm text-gray-400">MTsN 1 Makassar</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Organisasi Siswa Intra Madrasah yang inspiratif, inovatif, 
+                        serta berkarakter disiplin dan berakhlak mulia.
+                    </p>
+                    <div class="flex space-x-3">
+                        <div class="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors cursor-pointer">
+                            <i data-lucide="instagram" class="w-4 h-4"></i>
+                        </div>
+                        <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+                            <i data-lucide="facebook" class="w-4 h-4"></i>
+                        </div>
+                        <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors cursor-pointer">
+                            <i data-lucide="youtube" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Menu Utama</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#beranda" class="text-gray-400 hover:text-white transition-colors">Beranda</a></li>
+                        <li><a href="#tentang" class="text-gray-400 hover:text-white transition-colors">Tentang</a></li>
+                        <li><a href="#program" class="text-gray-400 hover:text-white transition-colors">Program Kerja</a></li>
+                        <li><a href="#anggota" class="text-gray-400 hover:text-white transition-colors">Anggota</a></li>
+                        <li><a href="#berita" class="text-gray-400 hover:text-white transition-colors">Berita</a></li>
+                        <li><a href="#galeri" class="text-gray-400 hover:text-white transition-colors">Galeri</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Seksi Bidang</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><span class="text-gray-400">Keagamaan</span></li>
+                        <li><span class="text-gray-400">Pendidikan</span></li>
+                        <li><span class="text-gray-400">Kesenian</span></li>
+                        <li><span class="text-gray-400">Olahraga</span></li>
+                        <li><span class="text-gray-400">Kewirausahaan</span></li>
+                        <li><span class="text-gray-400">Lingkungan Hidup</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Kontak</h4>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-start space-x-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0"></i>
+                            <span class="text-gray-400 leading-relaxed">
+                                Jl. Rappocini Raya No. 171, Rappocini, Makassar
+                            </span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
+                            <span class="text-gray-400">(0411) 863350</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
+                            <span class="text-gray-400">info@mtsn1makassar.sch.id</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                    <p>
+                        © 2025 OSIM MTsN 1 Makassar. Seluruh hak cipta dilindungi.
+                    </p>
+                    <div class="flex items-center mt-4 md:mt-0">
+                        <span>Dibuat dengan</span>
+                        <i data-lucide="heart" class="w-4 h-4 text-red-500 mx-1"></i>
+                        <span>untuk kemajuan madrasah</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
